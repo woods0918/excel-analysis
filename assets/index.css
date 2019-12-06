@@ -1,0 +1,112 @@
+.root {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-column-gap: 1vh;
+    grid-row-gap: 1vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8vh 90vh 2vh;
+}
+
+.header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#page-component {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding: 2vh 2vw;
+}
+
+.footer {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.top-button-area {
+    padding-top: 5vh;
+}
+
+#table-plot {
+    padding-top: 3vh;
+}
+
+.scatter-area {
+    padding-top: 3vh;
+}
+
+.scatter-conditions {
+    display: grid;
+    grid-row-gap: 1vw;
+    grid-column-gap: 1vh;
+    grid-auto-rows: 70px;
+    grid-template-columns: repeat(auto-fill, 230px);
+}
+
+#scatter-button {
+    height: 38px;
+    position: absolute;
+	bottom: 0;
+}
+
+#scatter-plot {
+    padding-top: 5vh;
+}
+
+.scatter-button-area {
+    position: relative;
+}
+
+.bar-conditions {
+    display: grid;
+    grid-row-gap: 1vw;
+    grid-column-gap: 1vh;
+    grid-auto-rows: 70px;
+    grid-template-columns: repeat(auto-fill, 230px);
+}
+
+.bar-area {
+    padding-top: 3vh;
+}
+
+.bar-button-area {
+    position: relative;
+}
+
+#bar-button {
+    height: 38px;
+    position: absolute;
+	bottom: 0;
+}
+
+#bar-plot {
+    padding-top: 5vh;
+}
+
+
+.box-conditions {
+    display: grid;
+    grid-row-gap: 1vw;
+    grid-column-gap: 1vh;
+    grid-auto-rows: 70px;
+    grid-template-columns: repeat(auto-fill, 230px);
+}
+
+.box-area {
+    padding-top: 3vh;
+}
+
+.box-button-area {
+    position: relative;
+}
+
+#box-button {
+    height: 38px;
+    position: absolute;
+	bottom: 0;
+}
+
+#box-plot {
+    padding-top: 5vh;
+}
