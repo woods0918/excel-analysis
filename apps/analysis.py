@@ -179,8 +179,11 @@ def plot_box(n_clicks, x, y, tooltip, data):
     return box.plot(data, x, y, tooltip)
 
 def update_download_link(figure, href):
-    if os.path.exists(os.path.join(RESOURCE_DIR, href.replace("/downloads/", ""))):
-        os.remove(os.path.join(RESOURCE_DIR, href.replace("/downloads/", "")))
+    filename = href.replace("/downloads/", "")
+    if len(filename) > 0:
+        filepath = os.path.join(RESOURCE_DIR, )
+        if os.path.exists(filepath):
+            os.remove(filepath)
 
     if len(figure["data"]) == 0:
         raise PreventUpdate
@@ -200,7 +203,7 @@ def link_style(n_clicks, x, y, tooltip, data):
     
     return {"font-size":"14px"}
 
-for plot_type in ["scatter", "tab", "box"]:
+for plot_type in ["scatter", "bar", "box"]:
     app.callback(
         Output(f'{plot_type}-download-link', 'href'),
         [Input(f"{plot_type}-plot", "figure")],
